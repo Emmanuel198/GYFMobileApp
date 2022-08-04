@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "gyf-mobile-app",
+    "slug": "gyf-mobile-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "gyf-mobile-app"
+}
