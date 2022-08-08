@@ -1,21 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import { NativeBaseProvider } from 'native-base';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import RouteProvider from './providers/routes/RouteProvider';
+import CardView from './views/posts/CardView';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider>
+      <RouteProvider>
+        <View >
+          <CardView />
+        </View>
+      </RouteProvider>
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
