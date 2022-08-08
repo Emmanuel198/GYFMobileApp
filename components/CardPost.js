@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import { Pressable, Box, VStack, HStack, Text } from 'native-base';
 import axios from 'axios';
 
+//TODO Extraer los estilos a una hoja de estilos con css
 const styles = StyleSheet.create({
   card: {
     marginTop: 15,
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const baseUrl = 'https://jsonplaceholder.typicode.com'
+const baseUrl = 'https://jsonplaceholder.typicode.com'//TODO Extraer la url a un .env utilizando react-native-config
 
 function CardPost(props) {
   const onPress = props.onPress;
